@@ -1,0 +1,240 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* flex-wrap: wrap; */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+.qualification-section{
+    border-radius: 10px;
+}
+.qualification-container{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+nav {
+    background:rgb(10, 92, 92);
+    color:black;
+    padding: 1rem;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul .logo {
+    margin-right: auto;
+    margin-left: 1rem;
+}
+
+nav ul .logo img {
+    height: 40px; 
+    width: auto;
+}
+
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient color */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+#home {
+    background: #f4f4f4;
+}
+
+#qualification {
+    background: #e2e2e2;
+}
+#qualification{
+    /* display: grid; */
+    grid-column: 200px;
+    position: relative;
+    padding-left: 2px;
+    size: 40vh;
+}
+.qualification-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    
+}
+
+.qualification-section {
+    flex: 1;
+    margin: 1rem;
+    padding: 5rem;
+    background: #ac8080;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.qualification-section h3 {
+    margin-bottom: 1rem;
+}
+
+.qualification-section ul {
+    list-style: none;
+}
+
+.qualification-section ul li {
+    background: #f9f9f9;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#about {
+    background: #c2c2c2;
+}
+
+#contact {
+    background: #a2a2a2;
+}
+
+.social-media {
+    margin-top: 1rem;
+}
+
+.social-media a {
+    margin: 0 1rem;
+    color: #333;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+   
+    width: 100%;
+    bottom: 0;
+}
+     </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#qualification">Qualification</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <h3>Hey, I am Shubham</p>
+    </section>
+    
+    <section id="qualification">
+        <h2>Qualification</h2>
+        <div class="qualification-container">
+            <div class="qualification-section">
+                <h3>Completed</h3>
+                <ul>
+                    <li>Education :-</li>
+                        School(2009-2022) :-
+                        Completed School till 10th Standard.<br>
+                        Collage:-
+                        Completed 10+2 in 2023. <br>
+                        Diploma(2022-2024) :-
+                        Completed Diploma First and Second Year in Information Technology.
+                        
+                    <li> Programming Knowledge :-</li>
+                        C Programming <br>C++ <br>Core Java Programming <br>VB.NET <br>SQL
+                </ul>
+            </div>
+            <div class="qualification-section">
+                <h3>Pursuing</h3>
+                <ul>
+                    <li>Education</li>
+                        Diploma(2024-2025) :-
+                        Pursuing Diploma Third Year in Information Technology.
+                    <li>Programming Languages</li>
+                        Advance Java Programming <br>
+                        HTML 5 <br>
+                        CSS 3 <br>
+                        JavaScript <br>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi!,I am Shubham, a Diploma Student in Third Year of Information Technology. Currenty, I am gaining practical experience through a Web Development Implant Training at Softcrowd Technologies. My aim is to develop my skills by exploring and learning new emerging technologies in the IT field.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>E-mail : mr.shubhamchaudhari91@gmail.com <br>
+            Contact No. 34567890</p>
+        <div class="social-media">
+            <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024. All rights reserved.</p>
+    </footer>
+</body>
+</html>
